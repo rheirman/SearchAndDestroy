@@ -73,6 +73,7 @@ namespace SearchAndDestroy.Harmony
                 toggleAction = () =>
                 {
                     pawnData.SD_enabled = !pawnData.SD_enabled;
+                    __instance.pawn.jobs.EndCurrentJob(JobCondition.InterruptForced, true);
                 }
             };
             return gizmo;
