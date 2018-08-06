@@ -11,6 +11,7 @@ using Verse;
 
 namespace SearchAndDestroy.Harmony
 {
+    /*
     [HarmonyPatch]
     public class FloatMenuMakerMap_GotoLocationOption
     {
@@ -36,7 +37,6 @@ namespace SearchAndDestroy.Harmony
 
         public static void CustomPrefix(Pawn pawn)
         {
-            Log.Message("calling interrupt");
             ExtendedPawnData pawnData = Base.Instance.GetExtendedDataStorage().GetExtendedDataFor(pawn);
             if (pawnData.SD_enabled)
             {
@@ -53,4 +53,5 @@ namespace SearchAndDestroy.Harmony
         }
 
     }
+    */
 }
