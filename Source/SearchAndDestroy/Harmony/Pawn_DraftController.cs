@@ -66,7 +66,9 @@ namespace SearchAndDestroy.Harmony
             {
                 defaultLabel = "SD_Gizmo_Melee_Label".Translate(),
                 defaultDesc = "SD_Gizmo_Melee_Description".Translate(),
+                hotKey = KeyBindingDefOf.Command_ItemForbid,
                 disabled = disabled,
+                order = 10.5f,
                 disabledReason = disabledReason,
                 icon = ContentFinder<Texture2D>.Get(("UI/" + "SearchAndDestroy_Gizmo_Melee"), true),
                 isActive = () => pawnData.SD_enabled,
@@ -95,7 +97,9 @@ namespace SearchAndDestroy.Harmony
             {
                 defaultLabel = "SD_Gizmo_Ranged_Label".Translate(),
                 defaultDesc = "SD_Gizmo_Ranged_Description".Translate(),
+                hotKey = KeyBindingDefOf.Command_ItemForbid,
                 disabled = disabled,
+                order = 10.6f,
                 disabledReason = disabledReason,
                 icon = ContentFinder<Texture2D>.Get(("UI/" + "SearchAndDestroy_Gizmo_Ranged"), true),
                 isActive = () => pawnData.SD_enabled,
