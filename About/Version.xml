@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VersionData>
+	<!-- Optional. Use this to specify the version of HugsLib you are targeting.
+	See https://github.com/UnlimitedHugs/RimworldHugsLib/releases for the current version of the library.-->
+	<requiredLibraryVersion>5.0.0</requiredLibraryVersion>
+</VersionData>
