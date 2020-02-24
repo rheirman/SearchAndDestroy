@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using RimWorld;
 using SearchAndDestroy.Storage;
 using System;
@@ -9,7 +9,7 @@ using System.Reflection.Emit;
 using System.Text;
 using Verse;
 
-namespace SearchAndDestroy.Harmony
+namespace SearchAndDestroy.Harmony2
 {
     /*
     [HarmonyPatch]

@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using RimWorld;
 using SearchAndDestroy.Storage;
 using System;
@@ -10,7 +10,7 @@ using Verse;
 using Verse.AI;
 using Verse.AI.Group;
 
-namespace SearchAndDestroy.Harmony
+namespace SearchAndDestroy.Harmony2
 {
     [HarmonyPatch(typeof(Pawn_DraftController), "set_Drafted")]
     public static class Pawn_DraftController_set_Drafted
@@ -34,7 +34,7 @@ namespace SearchAndDestroy.Harmony
             List<Gizmo> gizmoList = __result.ToList();
             bool isPlayerPawn = __instance.pawn.Faction != null && __instance.pawn.Faction.IsPlayer;
 
-            if (isPlayerPawn && __instance.pawn.equipment != null && __instance.pawn.Drafted && (__instance.pawn.story == null || !__instance.pawn.story.WorkTagIsDisabled(WorkTags.Violent)))
+            if (isPlayerPawn && __instance.pawn.equipment != null && __instance.pawn.Drafted && (__instance.pawn.story == null || !__instance.pawn.WorkTagIsDisabled(WorkTags.Violent)))
             {
                 if (__instance.pawn.equipment.Primary == null || __instance.pawn.equipment.Primary.def.IsMeleeWeapon)
                 {

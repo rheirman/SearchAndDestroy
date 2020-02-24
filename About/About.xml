@@ -2,7 +2,11 @@
 <ModMetaData>
 	<name>Search and Destroy</name>
 	<author>Roolo</author>
-	<targetVersion>1.0.0</targetVersion>
+	<supportedVersions>
+		<li>1.0</li>
+		<li>1.1</li>
+	</supportedVersions>
+	<packageId>search.anddestroy</packageId>
 	<description>
 Tired of pawns lounging about during the heat of the battle? Toggle Search and Destroy to let the AI take control over your pawns while you sit back and enjoy the slaughter. 
 
