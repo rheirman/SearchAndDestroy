@@ -34,7 +34,8 @@ namespace SearchAndDestroy.Storage
         {
 
             var id = pawn.thingIDNumber;
-            if (_store.TryGetValue(id, out ExtendedPawnData data))
+            ExtendedPawnData data = null;
+            if (_store.TryGetValue(id, out data))
             {
                 return data;
             }
