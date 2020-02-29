@@ -19,7 +19,7 @@ namespace SearchAndDestroy.Harmony
                 if(pawnData.SD_enabled && __instance.jobQueue.Count > 0)
                 {
                     QueuedJob qjob = __instance.jobQueue.Last();  
-                    __instance.ClearQueuedJobs();
+                    __instance.ClearQueuedJobs(false);
                     __result = new ThinkResult(qjob.job, __result.SourceNode, null, false);
                 }
             }

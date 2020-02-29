@@ -154,7 +154,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base.cs" />
-    <Compile Include="Harmony\FloatMenuMakerMap.cs" />
     <Compile Include="Harmony\Pawn_DraftController.cs" />
     <Compile Include="Harmony\Pawn_JobTracker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

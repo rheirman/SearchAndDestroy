@@ -71,6 +71,7 @@ namespace SearchAndDestroy.Harmony
                 isActive = () => pawnData.SD_enabled,
                 toggleAction = () =>
                 {
+                    Log.Message("SearchAndDestroy_Gizmo_Ranged toggle");
                     pawnData.SD_enabled = !pawnData.SD_enabled;
                     __instance.pawn.jobs.EndCurrentJob(JobCondition.InterruptForced, true);
                 }
@@ -102,6 +103,7 @@ namespace SearchAndDestroy.Harmony
                 isActive = () => pawnData.SD_enabled,
                 toggleAction = () =>
                 {
+                    Log.Message("SearchAndDestroy_Gizmo_Ranged toggle");
                     pawnData.SD_enabled = !pawnData.SD_enabled;
                     __instance.pawn.jobs.EndCurrentJob(JobCondition.InterruptForced, true);
                 }

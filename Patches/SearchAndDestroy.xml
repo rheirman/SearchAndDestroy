@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThinkTreeDef[defName = "Humanlike"]/thinkRoot[@Class = "ThinkNode_Priority"]/subNodes/li[@Class="ThinkNode_QueuedJob"]</xpath> <!--Priority is important here, hence the insert after this specific subNode--> 
-		<value>
-			<!-- Wait if drafted -->
+		<xpath>Defs/ThinkTreeDef[defName = "Humanlike"]/thinkRoot[@Class = "ThinkNode_Priority"]/subNodes/li[@Class="ThinkNode_QueuedJob"]</xpath> <!--Priority is important here, hence the insert after this specific subNode--> 
+		<value> 
+			 <!-- Do search and destroy instead of waiting -->
 			<li Class="SearchAndDestroy.ThinkNode_ConditionalSearchAndDestroy">
 			  <subNodes>
 				<li Class="ThinkNode_Priority">
 				  <subNodes>
+				    <li Class="JobGiver_MoveToStandable"/>
 					<li Class="JobGiver_AIFightEnemies">
 					  <targetAcquireRadius>200</targetAcquireRadius>
-					  <targetKeepRadius>72</targetKeepRadius>
+					  <targetKeepRadius>32</targetKeepRadius>
 					</li>
 					<li Class="JobGiver_AIGotoNearestHostile" />
 				  </subNodes>
