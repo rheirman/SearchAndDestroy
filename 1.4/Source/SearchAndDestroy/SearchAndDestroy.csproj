@@ -154,11 +154,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base.cs" />
+    <Compile Include="Harmony\JobGiver_Orders.cs" />
     <Compile Include="Harmony\Pawn_DraftController.cs" />
+    <Compile Include="Harmony\AttackTargetsCache.cs" />
     <Compile Include="Harmony\Pawn_JobTracker.cs" />
+    <Compile Include="JobGiver_AIFightEnemiesShortExp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Storage\ExtendedDataStorage.cs" />
     <Compile Include="Storage\ExtendedPawnData.cs" />
+    <Compile Include="JobGiver_AIGoWithinRangeOfHostile.cs" />
     <Compile Include="ThinkNode_ConditionalSearchAndDestroy.cs" />
   </ItemGroup>
   <ItemGroup>
